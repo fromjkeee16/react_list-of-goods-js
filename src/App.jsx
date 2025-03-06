@@ -40,9 +40,9 @@ export const App = () => {
 
   goods.sort((a, b) => {
     switch (sortType) {
-      case 'alpha':
+      case ALPHA_SORT_NAME:
         return a.localeCompare(b);
-      case 'len':
+      case LENGTH_SORT_NAME:
         return a.length - b.length;
       default:
         return 0;
